@@ -34,6 +34,7 @@ module SEPA
           builder.ReqdExctnDt(group[:requested_date].iso8601)
           builder.Dbtr do
             builder.Nm(account.name)
+            builder.Id(account.vat)  
           end
           builder.DbtrAcct do
             builder.Id do
